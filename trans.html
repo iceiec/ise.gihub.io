@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+    <title>Transaction Table</title>
+    <style>
+        .schedule-table {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 0 auto;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        .sec {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header" style="height:155px;">
+        <img src="fjabasketball.png" id="logo">
+        <ul>
+            <li><a href="frontlog.html">Home</a></li>
+            <li><a href="howto.html">How To Book</a></li>
+            <li><a href="book.html"><b>Book A Schedule</b></a></li>
+            <li><a href="profile.html"><b>Profile</b></a></li>
+            <li><a href="trans.html"><b>Transactions</b></a></li>
+        </ul>
+        <br>
+        
+        <div class="profile-header">
+            <img src="path/to/default_profile_picture.png" alt="Profile Picture" class="pfp">
+            <div class="user-info">
+                <h2 class="username">Welcome, Firstname Lastname!</h2>
+                <a href="logout.html" class="logout-link"><b>Log out</b></a>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="sec">
+        <h2>Transactions you've made</h2>
+        <div class="schedule-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Reference Number</th>
+                        <th>Downpayment</th>
+                        <th>Payment Method</th>
+                        <th>Court Name</th>
+                        <th>Total Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-10-05 13:45:00</td>
+                        <td>ABC12345</td>
+                        <td>₱500.00</td>
+                        <td>Gcash</td>
+                        <td>Juliet Court</td>
+                        <td>₱1500.00</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">No more transactions found</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
